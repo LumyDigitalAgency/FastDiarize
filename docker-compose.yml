@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  fast-diarize:
+    build: .
+    container_name: fastapi-diarize
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - HUGGINGFACE_TOKEN=${HUGGINGFACE_TOKEN}
+    volumes:
+      - ./logs:/app/logs  # Mount a local directory for logs (optional)
