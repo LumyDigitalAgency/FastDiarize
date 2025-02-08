@@ -3,7 +3,6 @@ FROM python:3.10-slim
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1 \
-    HUGGINGFACE_TOKEN=${HUGGINGFACE_TOKEN} \
     PORT=8000
 
 # Set the working directory inside the container
