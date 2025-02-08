@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+torch
+torchaudio
+requests
+pydantic
+pyannote.audio
+python-dotenv
